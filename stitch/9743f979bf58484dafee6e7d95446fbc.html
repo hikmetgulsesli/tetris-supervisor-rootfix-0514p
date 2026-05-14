@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tetris Supervisor - Paused</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed-variant": "#005321",
+                      "surface": "#0e150e",
+                      "inverse-on-surface": "#2a322a",
+                      "secondary-fixed-dim": "#7bd0ff",
+                      "on-primary-fixed": "#002109",
+                      "secondary-container": "#00a6e0",
+                      "on-surface-variant": "#bccbb9",
+                      "surface-container-high": "#242c24",
+                      "on-secondary": "#00354a",
+                      "outline": "#869585",
+                      "on-tertiary": "#60130d",
+                      "primary": "#4be277",
+                      "on-tertiary-fixed": "#410001",
+                      "surface-container-low": "#161d16",
+                      "on-tertiary-fixed-variant": "#7f2a21",
+                      "on-primary-container": "#004b1e",
+                      "on-secondary-container": "#00374d",
+                      "primary-fixed": "#6bff8f",
+                      "on-secondary-fixed-variant": "#004c69",
+                      "on-secondary-fixed": "#001e2c",
+                      "on-background": "#dce5d9",
+                      "on-error-container": "#ffdad6",
+                      "on-error": "#690005",
+                      "on-primary": "#003915",
+                      "surface-dim": "#0e150e",
+                      "on-surface": "#dce5d9",
+                      "surface-tint": "#4ae176",
+                      "tertiary-fixed": "#ffdad5",
+                      "surface-container-highest": "#2f372e",
+                      "surface-bright": "#333b33",
+                      "secondary-fixed": "#c4e7ff",
+                      "inverse-primary": "#006e2f",
+                      "error-container": "#93000a",
+                      "on-tertiary-container": "#76231b",
+                      "surface-container": "#1a221a",
+                      "outline-variant": "#3d4a3d",
+                      "primary-fixed-dim": "#4ae176",
+                      "surface-container-lowest": "#091009",
+                      "error": "#ffb4ab",
+                      "background": "#0e150e",
+                      "primary-container": "#22c55e",
+                      "inverse-surface": "#dce5d9",
+                      "tertiary-container": "#ff8b7c",
+                      "secondary": "#7bd0ff",
+                      "surface-variant": "#2f372e",
+                      "tertiary": "#ffb5ab",
+                      "tertiary-fixed-dim": "#ffb4a9"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "lg": "1.5rem",
+                      "board-gutter": "2px",
+                      "xs": "0.25rem",
+                      "sm": "0.5rem",
+                      "xl": "2rem",
+                      "base": "4px",
+                      "touch-target-min": "44px",
+                      "md": "1rem"
+              },
+              "fontFamily": {
+                      "mono-data": [
+                              "JetBrains Mono"
+                      ],
+                      "body-base": [
+                              "Geist"
+                      ],
+                      "headline-md": [
+                              "Geist"
+                      ],
+                      "display-score": [
+                              "Geist"
+                      ],
+                      "status-label": [
+                              "Geist"
+                      ],
+                      "button-text": [
+                              "Geist"
+                      ]
+              },
+              "fontSize": {
+                      "mono-data": [
+                              "18px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-base": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-score": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "status-label": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "button-text": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body { background-color: #0F172A; } /* Level 0 Base */
+        .board-container { background-color: #111827; border-color: #334155; } /* Level 1 Base */
+    </style>
+</head>
+<body class="text-on-surface h-screen w-screen overflow-hidden flex flex-col font-body-base text-body-base relative">
+<!-- Top App Bar - Suppressed for task/overlay intent, but rendering structural placeholder to simulate context -->
+<header class="bg-surface border-b border-outline-variant flex justify-between items-center w-full px-lg py-sm h-16 z-10 opacity-30 blur-sm pointer-events-none absolute top-0 left-0 w-full">
+<div class="font-headline-md text-headline-md font-semibold text-primary">
+            Tetris Supervisor Root Fix 0514p
+        </div>
+<div class="flex gap-md text-on-surface-variant">
+<span class="material-symbols-outlined">settings</span>
+<span class="material-symbols-outlined">help</span>
+</div>
+</header>
+<!-- Side Nav - Suppressed for task/overlay intent, structural placeholder -->
+<aside class="fixed left-0 top-16 bottom-0 bg-surface-container-low border-r border-outline-variant w-64 py-md z-10 opacity-30 blur-sm pointer-events-none hidden md:flex flex-col">
+<div class="px-lg pb-md mb-md border-b border-outline-variant">
+<div class="font-headline-md text-headline-md text-primary mb-xs">System Status</div>
+<div class="font-status-label text-status-label text-on-surface-variant uppercase">Supervisor Active</div>
+</div>
+<nav class="flex-1 flex flex-col gap-sm">
+<!-- Simplified representation for background context -->
+<div class="flex items-center gap-sm py-sm text-on-surface-variant pl-4">
+<span class="material-symbols-outlined">play_arrow</span>
+<span>Play</span>
+</div>
+<div class="flex items-center gap-sm py-sm text-on-surface-variant pl-4">
+<span class="material-symbols-outlined">analytics</span>
+<span>Stats</span>
+</div>
+</nav>
+</aside>
+<!-- Simulated Game Canvas (Blurred Background) -->
+<main class="flex-1 flex justify-center items-center h-full w-full relative z-0 opacity-50 blur-md pointer-events-none" style="padding-top: 64px; padding-left: 256px;">
+<div class="board-container border-2 w-[300px] h-[600px] rounded flex justify-center items-center relative overflow-hidden">
+<!-- Simulated Grid Lines -->
+<div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px); background-size: 30px 30px;"></div>
+<!-- Simulated Active Piece Glow -->
+<div class="absolute bottom-10 left-20 w-[60px] h-[30px] bg-primary rounded-sm opacity-80 shadow-[0_0_15px_rgba(34,197,94,0.6)]"></div>
+</div>
+</main>
+<!-- PAUSE OVERLAY (The actual content of this screen) -->
+<div class="absolute inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-sm">
+<div class="flex flex-col items-center gap-xl">
+<!-- Header -->
+<h1 class="font-display-score text-display-score text-on-surface tracking-wider uppercase mb-lg" style="text-shadow: 0 0 20px rgba(220,229,217,0.2);">
+                Paused
+            </h1>
+<!-- Menu Options container -->
+<div class="flex flex-col gap-md w-64">
+<!-- Active 'RESUME' Button -->
+<button class="bg-primary-container text-on-primary-container font-button-text text-button-text h-[44px] rounded flex items-center justify-center w-full uppercase tracking-widest border-2 border-primary ring-2 ring-primary ring-offset-2 ring-offset-background hover:bg-primary-fixed-dim transition-colors shadow-[0_0_15px_rgba(34,197,94,0.3)]">
+<span class="material-symbols-outlined mr-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                    Resume
+                </button>
+<!-- 'RESTART' Button -->
+<button class="bg-surface text-on-surface font-button-text text-button-text h-[44px] rounded border border-outline hover:bg-surface-container-high transition-colors flex items-center justify-center w-full uppercase tracking-widest">
+<span class="material-symbols-outlined mr-sm">refresh</span>
+                    Restart
+                </button>
+<!-- 'QUIT TO MENU' Button -->
+<button class="bg-surface text-on-surface font-button-text text-button-text h-[44px] rounded border border-outline hover:bg-surface-container-high transition-colors flex items-center justify-center w-full uppercase tracking-widest mt-sm">
+<span class="material-symbols-outlined mr-sm">logout</span>
+                    Quit to Menu
+                </button>
+</div>
+</div>
+</div>
+</body></html>
