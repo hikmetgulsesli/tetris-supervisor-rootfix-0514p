@@ -1,0 +1,424 @@
+[
+  {
+    "screenId": "9743f979bf58484dafee6e7d95446fbc",
+    "screenTitle": "Pause Overlay",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Resume",
+        "line": 203
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 208
+      },
+      {
+        "type": "button",
+        "label": "Quit to Menu",
+        "line": 213
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Resume",
+        "line": 203
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 208
+      },
+      {
+        "type": "button",
+        "label": "Quit to Menu",
+        "line": 213
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 3,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "48a089c6b4df4d2197614d550d459039",
+    "screenTitle": "Controls Help",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "BACK TO MENU",
+        "line": 159
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "BACK TO MENU",
+        "line": 159
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 1,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "890362babd0142bea9b3ad12ac398a7c",
+    "screenTitle": "Main Menu",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Play",
+        "href": "#",
+        "line": 186
+      },
+      {
+        "type": "link",
+        "label": "Stats",
+        "href": "#",
+        "line": 191
+      },
+      {
+        "type": "link",
+        "label": "leaderboard",
+        "href": "#",
+        "line": 195
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "Settings",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "Help",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "Restart Session",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "START NEW GAME",
+        "line": 230
+      },
+      {
+        "type": "button",
+        "label": "RESUME",
+        "line": 233
+      },
+      {
+        "type": "button",
+        "label": "CONTROLS HELP",
+        "line": 236
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Play",
+        "href": "#",
+        "line": 186
+      },
+      {
+        "type": "link",
+        "label": "Stats",
+        "href": "#",
+        "line": 191
+      },
+      {
+        "type": "link",
+        "label": "leaderboard",
+        "href": "#",
+        "line": 195
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 199
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Settings",
+        "line": 166
+      },
+      {
+        "type": "button",
+        "label": "Help",
+        "line": 169
+      },
+      {
+        "type": "button",
+        "label": "Restart Session",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "START NEW GAME",
+        "line": 230
+      },
+      {
+        "type": "button",
+        "label": "RESUME",
+        "line": 233
+      },
+      {
+        "type": "button",
+        "label": "CONTROLS HELP",
+        "line": 236
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 10,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "63bf9650f43249259b025a96322ef0f4",
+    "screenTitle": "Game Board",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Play",
+        "href": "#",
+        "line": 153
+      },
+      {
+        "type": "link",
+        "label": "Stats",
+        "href": "#",
+        "line": 159
+      },
+      {
+        "type": "link",
+        "label": "leaderboard",
+        "href": "#",
+        "line": 165
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 171
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 136
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 139
+      },
+      {
+        "type": "button",
+        "label": "Restart Session",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "pause",
+        "line": 227
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 230
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Play",
+        "href": "#",
+        "line": 153
+      },
+      {
+        "type": "link",
+        "label": "Stats",
+        "href": "#",
+        "line": 159
+      },
+      {
+        "type": "link",
+        "label": "leaderboard",
+        "href": "#",
+        "line": 165
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 171
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 136
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 139
+      },
+      {
+        "type": "button",
+        "label": "Restart Session",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "pause",
+        "line": 227
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 230
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 9,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "9e63d9195db745839b2b5f5dbaec4936",
+    "screenTitle": "Game Over",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Play",
+        "href": "#",
+        "line": 128
+      },
+      {
+        "type": "link",
+        "label": "Stats",
+        "href": "#",
+        "line": 132
+      },
+      {
+        "type": "link",
+        "label": "leaderboard",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 140
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 113
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 116
+      },
+      {
+        "type": "button",
+        "label": "Restart Session",
+        "line": 146
+      },
+      {
+        "type": "button",
+        "label": "PLAY AGAIN",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "MAIN MENU",
+        "line": 193
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Play",
+        "href": "#",
+        "line": 128
+      },
+      {
+        "type": "link",
+        "label": "Stats",
+        "href": "#",
+        "line": 132
+      },
+      {
+        "type": "link",
+        "label": "leaderboard",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "Settings",
+        "href": "#",
+        "line": 140
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 113
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 116
+      },
+      {
+        "type": "button",
+        "label": "Restart Session",
+        "line": 146
+      },
+      {
+        "type": "button",
+        "label": "PLAY AGAIN",
+        "line": 190
+      },
+      {
+        "type": "button",
+        "label": "MAIN MENU",
+        "line": 193
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 9,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
